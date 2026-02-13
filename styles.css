@@ -165,14 +165,14 @@
   padding-bottom: 98px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .pro1,
   .pro2 {
     padding-bottom: 58px;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .hero h1 {
     font-size: 61px;
   }
@@ -244,13 +244,13 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .quotes .carousel-item img {
     margin-left: 40px;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   :root {
     --arrow-move-y: 40%;
     --arrow-move-x: 13px;
@@ -371,7 +371,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   :root {
     --popular-arrows-x: -6vw;
   }
@@ -380,7 +380,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   :root {
     --popular-arrows-x: -15px;
   }
@@ -561,7 +561,7 @@
   width: 200px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .pricing-header h1 {
     font-size: 24px;
   }
@@ -629,7 +629,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .prices-grid .row {
     margin-bottom: 51px;
   }
@@ -701,7 +701,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .faq .section-body .col1,
   .faq .section-body .col2 {
     padding: 0 4vw;
@@ -849,7 +849,7 @@
   background-color: white;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .search .box1 .input-group {
     margin-bottom: 0;
   }
@@ -877,7 +877,7 @@
   padding-bottom: 18px;
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .results .card-img-overlay {
     top: 1vh;
   }
@@ -891,7 +891,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .results .card-img-overlay {
     top: 5vh;
   }
