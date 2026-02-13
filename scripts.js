@@ -76,11 +76,11 @@ function createSlidingCarousel(carouselId, videos) {
   const $inner = $carousel.find('.carousel-inner');
   let currentIndex = 0;
 
-  // Triple the videos array for infinite looping
+
   const videosLoop = [...videos, ...videos, ...videos];
   const startIndex = videos.length;
 
-  // Build one single carousel-item containing all cards in a flex row
+
   let allCardsHTML =
     '<div class="carousel-item active">' +
     '<div class="row flex-nowrap" style="transition: transform 0.6s ease; margin: 0;">';
@@ -122,7 +122,7 @@ function createSlidingCarousel(carouselId, videos) {
   const $row = $inner.find('.row');
   currentIndex = startIndex;
 
-  // Set each card's width based on how many should be visible
+
   function updateCardWidths() {
     const visibleCards = getVisibleCards();
     const cardWidth = 100 / visibleCards;
@@ -131,10 +131,10 @@ function createSlidingCarousel(carouselId, videos) {
 
   updateCardWidths();
 
-  // Remove Bootstrap's carousel JS so our handlers take over
+
   $carousel.carousel('dispose');
 
-  // Move the row via CSS transform
+
   function updateCarouselPosition(animate = true) {
     const visibleCards = getVisibleCards();
     const cardPercentage = 100 / visibleCards;
@@ -144,12 +144,12 @@ function createSlidingCarousel(carouselId, videos) {
     $row.css('transform', `translateX(${translateX}%)`);
   }
 
-  // Initial position (no animation)
+
   setTimeout(function () {
     updateCarouselPosition(false);
   }, 100);
 
-  // Next button: advance one card, wrap around if needed
+
   $carousel.find('.carousel-control-next').off('click').on('click', function (e) {
     e.preventDefault();
     currentIndex++;
@@ -163,7 +163,6 @@ function createSlidingCarousel(carouselId, videos) {
     }
   });
 
-  // Prev button: go back one card, wrap around if needed
   $carousel.find('.carousel-control-prev').off('click').on('click', function (e) {
     e.preventDefault();
     currentIndex--;
@@ -177,7 +176,6 @@ function createSlidingCarousel(carouselId, videos) {
     }
   });
 
-  // Recalculate card widths and position on resize (debounced)
   let resizeTimer;
   $(window).on('resize', function () {
     clearTimeout(resizeTimer);
