@@ -25,3 +25,7 @@ Your Javascript must be executed only when the document is loaded
 4. Pricing - quotes
 
 5. Courses
+
+## Authors
+
+- Corentin Robles
